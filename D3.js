@@ -114,21 +114,32 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   console.log(starWarsCharacters[i]);
   console.log(starWarsCharacters[i].name);
 }
+// fare push
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 do {
   */
-const femaleCharacter = [];
-femaleCharacter.push("Leia", "Beru");
+let femaleCharacters = [];
 
-{
-  console.log(femaleCharacter);
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender === "female") {
+    femaleCharacters.push(starWarsCharacters[i]);
+  }
 }
+
+console.log(femaleCharacters);
+
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
-eyeColor = ["blue", "yellow", "brown", "red", "blue-gray"];
+let eyeColor = {
+  blue,
+  yellow,
+  brown,
+  red,
+  bluegray,
+};
 
 let blue = [];
 let yellow = [];
@@ -183,7 +194,23 @@ switch (name) {
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
 
-  
+  let StarShip = 500
+
+ for (Starship) ; ([i] < 500) {
+  console.log("Ship is under loaded ", i);
+  continue;}
+  if ([i] > 500 ) {
+    console.log("Ship is half loaded ", i);
+continue;}
+    if ([i] > 700) {
+      console.log("Warning: Load is over 700", i);
+continue;}
+      if ([i] > 900) {
+        console.log("Critical Load: Over 900", i);
+continue; }
+        if ([i] > 1000) {
+          console.log(" DANGER! OVERLOAD ALERT : escape from ship now! ", i);
+break}
   Se la massa è inferiore a 500 stampa in console: "Ship is under loaded"
   Se la massa è superiore a 500 stampa in console: "Ship is half loaded"
   Se la massa è superiore a 700 stampa in console: "Warning: Load is over 700"
